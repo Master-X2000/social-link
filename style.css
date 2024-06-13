@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf)
+    format(truetype);
+    font-display:swap;
+    font-weight:100 900
+}
+
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+img,
+svg{
+    display: block;
+    width:100%;
+    height:auto;
+}
+
+:root{
+    --GREEN: hsl(75, 94%, 57%);
+    --WHITE: hsl(0, 0%, 100%);
+    --LIST-BGCOLOR: hsl(0, 0%, 20%);
+    --CONTAINER-BGCOLOR: hsl(0, 0%, 12%);
+    --BG-COLOR: hsl(0, 0%, 8%);
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-flow:column nowrap;
+    min-height:100svh;
+    background: var(--BG-COLOR);
+    font-family:'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container{
+    display:flex;
+    justify-items:center;
+    align-items:center;
+    flex-direction:column;
+    width:18.5rem;
+    gap:1rem;
+    margin-inline:1rem;
+    text-align:center;
+    background:var(--CONTAINER-BGCOLOR);
+    padding:1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 3px var(--BG-COLOR) ;
+}
+
+.container img{
+    border-radius:50%;
+    margin-bottom:1rem;
+    width:100px;
+    
+}
+
+.container .main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-items:center;
+    color:var(--WHITE);
+}
+
+.container .main h3{
+    font-size:1.2rem;
+    font-weight:700;
+    color:var(--WHITE);
+    line-height:1;
+}
+
+.container .main .location{
+    color:var(--GREEN)
+}
+
+.container .main p{
+    font-size:0.7rem;
+    font-weight: 400;
+}
+
+.occupation{
+    font-size:0.7rem;
+    color:var(--WHITE);
+}
+
+.container ul{
+    width:100%;
+}
+
+.container ul li{
+    list-style-type:none;
+    width:100%;
+    margin:0.5rem;
+    padding: 0.5rem;
+    color:var(--WHITE);
+    background-color: var(--LIST-BGCOLOR);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.container ul li:hover {
+    color:var(--BG-COLOR);
+    background-color: var(--GREEN);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
